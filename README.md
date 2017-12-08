@@ -5,7 +5,7 @@ An net work gohang game ,base on libevent,but not finish.
 make by qt
 
 ## server 
-use libevent  
+use libevent mysql,so you should install them before compile
 
 1.cd GohangServer 
 2.mkdir build  
