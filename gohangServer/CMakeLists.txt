@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.7)
+project(Server)
+set(target Server.app)
+aux_source_directory(. src)
+aux_source_directory(./handle_msg src)
+aux_source_directory(./handle_msg/msg_options src)
+add_executable(${target} ${src})
+target_link_libraries(${target} pthread event_core mysqlclient)
